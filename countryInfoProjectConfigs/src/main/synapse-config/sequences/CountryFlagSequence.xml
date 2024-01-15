@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sequence name="CountryFlagSequence" trace="disable" xmlns="http://ws.apache.org/ns/synapse">
+    <payloadFactory media-type="xml">
+        <format>
+            <soap:Envelope xmlns:soap="http://www.w3.org/2003/05/soap-envelope" xmlns:web="http://www.oorsprong.org/websamples.countryinfo">
+                <soap:Header/>
+                <soap:Body>
+                    <web:CountryFlag>
+                        <web:sCountryISOCode>$1</web:sCountryISOCode>
+                    </web:CountryFlag>
+                </soap:Body>
+            </soap:Envelope>
+        </format>
+        <args>
+            <arg evaluator="xml" expression="$ctx:getIsoCode"/>
+        </args>
+    </payloadFactory>
+    <call>
+        <endpoint key="countryName"/>
+    </call>
+    <log/>
+</sequence>

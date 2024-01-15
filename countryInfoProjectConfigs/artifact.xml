@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?><artifacts>
+    <artifact name="countryInfoLocalEntry" groupId="com.example.local-entry" version="1.0.0" type="synapse/local-entry" serverRole="EnterpriseServiceBus">
+        <file>src/main/synapse-config/local-entries/countryInfoLocalEntry.xml</file>
+    </artifact>
+    <artifact name="countryInfoProxyService" groupId="com.example.proxy-service" version="1.0.0" type="synapse/proxy-service" serverRole="EnterpriseServiceBus">
+        <file>src/main/synapse-config/proxy-services/countryInfoProxyService.xml</file>
+    </artifact>
+    <artifact name="countryInfoProxyService_proxy_metadata" groupId="com.example.metadata" version="1.0.0" type="synapse/metadata" serverRole="EnterpriseServiceBus">
+        <file>src/main/resources/metadata/countryInfoProxyService_proxy_metadata.yaml</file>
+    </artifact>
+    <artifact name="countryName" groupId="com.example.endpoint" version="1.0.0" type="synapse/endpoint" serverRole="EnterpriseServiceBus">
+        <file>src/main/synapse-config/endpoints/countryName.xml</file>
+    </artifact>
+    <artifact name="countryNameSequence" groupId="com.example.sequence" version="1.0.0" type="synapse/sequence" serverRole="EnterpriseServiceBus">
+        <file>src/main/synapse-config/sequences/countryNameSequence.xml</file>
+    </artifact>
+    <artifact name="countryCapitalSequence" groupId="com.example.sequence" version="1.0.0" type="synapse/sequence" serverRole="EnterpriseServiceBus">
+        <file>src/main/synapse-config/sequences/countryCapitalSequence.xml</file>
+    </artifact>
+    <artifact name="clearNameSpaceLocalEntry" groupId="com.example.local-entry" version="1.0.0" type="synapse/local-entry" serverRole="EnterpriseServiceBus">
+        <file>src/main/synapse-config/local-entries/clearNameSpaceLocalEntry.xml</file>
+    </artifact>
+    <artifact name="countryPhoneCodeSequence" groupId="com.example.sequence" version="1.0.0" type="synapse/sequence" serverRole="EnterpriseServiceBus">
+        <file>src/main/synapse-config/sequences/countryPhoneCodeSequence.xml</file>
+    </artifact>
+    <artifact name="CountryFlagSequence" groupId="com.example.sequence" version="1.0.0" type="synapse/sequence" serverRole="EnterpriseServiceBus">
+        <file>src/main/synapse-config/sequences/CountryFlagSequence.xml</file>
+    </artifact>
+</artifacts>
